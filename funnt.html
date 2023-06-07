@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Thing</title>
+</head>
+<body>
+    <div id="yin-young"></div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            align-items: center;
+            align-content: center;
+            margin: 50px;
+            padding: 4px 4px 5px 5px ;
+        }
+        #yin-young{
+            width: 96px;
+            box-sizing: content-box;
+            height: 48px;
+            background: #eee;
+            border-color: red;
+            border-style: solid;
+            border-width: 2px 2px 50px 2px;
+            border-radius: 100%;
+            position: relative;
+        }
+        #yin-young::before{
+
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background: #eee;
+            border: 18px solid red;
+            border-radius: 100%;
+            width: 12px;
+            height: 12px;
+            box-sizing: content-box;
+        }
+        
+    </style>
+    
+</body>
+</html>
