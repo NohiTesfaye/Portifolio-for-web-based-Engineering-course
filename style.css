@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  
+    transition: 0.3s;
+}
+
+.switch{
+    width:80px;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgb(39,38,38);
+    position: relative;
+}
+
+.flicker{
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    background-color:rgb(255, 255, 255);
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: 
+    inset 4px 4px 4px rgba(255,255,255),
+    inset -4px -4px 4px  rgba(195 193 198/90%);
+    ;
+}
+
+.dark{
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+.moon{
+    width:20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+.dark .flicker{
+    transform: translateX(40px);
+    
+}
+
+.myphoto{
+    height: 300px;
+    width:250px;
+    justify-items:center;
+    border-radius:45px;
+    margin: 40px;
+    padding: 10px;
+}
+span{
+    color:#b12626;
+    font-size: 100px;
+    font-weight: 200;
+    text-shadow: 0cap;
+}
+h1{
+   color: darkmagenta;
+    font-size: larger;
+    font-weight: 500px;
+ font-style: normal;
+ font-family: sans-serif;
+}
+p{
+  color: black;
+    font-weight: 35px;
+font-family: cursive;
+text-shadow: 0cap;
+}
+.navbar{
+    width:70%;
+    position: fixed;
+    top:100px;
+    
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: white;
+}
+.link-group{
+    list-style: none;
+    display: flex;
+}
+.link a{
+    color:#b12626;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0px 20px;
+    line-height: 50px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.dark .link-group{
+    background-color: black;
+}
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+
