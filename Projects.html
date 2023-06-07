@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mMy projects title</title>
+</head>
+<body>
+    <h1>My Calculator projects</h1>
+    <fieldset>
+        <input type="text" id="result" name="result" readonly><br>
+        <input type="button" value="1" onclick="document.getElementById('result').value+='1'">
+        <input type="button" value="2" onclick="document.getElementById('result').value+='2'">
+        <input type="button" value="3" onclick="document.getElementById('result').value+='3'">
+        <input type="button" value="+" onclick="document.getElementById('result').value+='+'">
+        <br>
+        <input type="button" value="4" onclick="document.getElementById('result').value+='4'">
+        <input type="button" value="5" onclick="document.getElementById('result').value+='5'">
+        <input type="button" value="6" onclick="document.getElementById('result').value+='6'">
+        <input type="button" value="*" onclick="document.getElementById('result').value+='*'">
+        <br>
+        <input type="button" value="7" onclick="document.getElementById('result').value+='7'">
+        <input type="button" value="8" onclick="document.getElementById('result').value+='8'">
+        <input type="button" value="9" onclick="document.getElementById('result').value+='9'">
+        <input type="button" value="-" onclick="document.getElementById('result').value+='-'">
+        <br>
+        <input type="button" value="0" onclick="document.getElementById('result').value+='0'">
+        <input type="button" value="." onclick="document.getElementById('result').value+='.'">
+        <input type="button" value="C" onclick="document.getElementById('result').value+=''">
+        <input type="button" value="-" onclick="document.getElementById('result').value+='-'">
+        <br>
+        <input type="button" value="sin" onclick="document.getElementById('result').value=Math.sin(document.getElementById('result').value)">
+        <input type="button" value="cos" onclick="document.getElementById('result').value=Math.cos(document.getElementById('result').value)">
+        <input type="button" value="tan" onclick="document.getElementById('result').value=Math.tan(document.getElementById('result').value)">
+        <input type="button" value="=" onclick="document.getElementById('result').value=eval(document.getElementById('result').value)">
+        <br>
+    </form>
+</fieldset>
+<style> 
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#result{
+    border: 3px solid black;
+}
+fieldset{
+    
+    padding: 60px;
+    border-color: aqua;
+    border-left: 50px;
+    border-right: 50px;
+    border-radius: 120px;
+    
+
+}
+input{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+h1{
+    color: darkmagenta;
+}
+input button{
+    color: rgb(47, 116, 116);
+    font-size: 55px;
+    font-weight: 200;
+
+}
+</style>
+
+    <nav class="navbar">
+        <u1 class="link-group">
+            <li class="link"><a href="myhtml.html">Home</a></li>
+            <li class="link"><a href="Projects.html">Projects</a></li>
+            <li class="link"><a href="About.html">About</a></li>
+            <li class="link"><a href="contact.html">contact</a></li>
+    
+        </u1>
+    
+    </nav>
+    
+</body>
+</html>
